@@ -37,5 +37,8 @@ def test_decoration():
     result = greeter.greet('Lars-Erik')
     pprint('\n')
     pprint(result)
-    assert (result == "Hi, Lars-Erik. Lovely afternoon"
-         or result == "Hi, Lars-Erik. Lovely morning")
+    assert result in [
+        "Hi, Lars-Erik. Lovely afternoon",
+        "Hi, Lars-Erik. Lovely morning"
+    ]
+
